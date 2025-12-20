@@ -1,0 +1,88 @@
+
+Canberra, ACT 2900
+Email: Skyee.kyla@gmail.com
+LinkedIn: 
+Portfolio:
+________________________________________
+Career Objective
+Data Science graduate based in Canberra with hands-on experience in data analysis, workflow automation and Power BI reporting. Proficient in Python, SQL, R and reproducible analytics workflows. I’m passionate about using data to improve services and support evidence-based decisions, and I’m seeking an opportunity where I can contribute meaningful work for the Canberra community while growing as a data professional.________________________________________
+Key Skills
+•	Power BI: Interactive dashboards, data modelling, DAX, scheduled refreshes
+•	 Data Analysis & Preparation: Data wrangling, cleaning and EDA using Python (Pandas, NumPy), R (tidyverse) and SQL
+•	Reporting & Visualisation: Power BI, Excel dashboards, Matplotlib, Seaborn
+•	Workflow Automation & Tools: Power Automate, Zapier, HubSpot CRM, Excel (pivot tables, VLOOKUP)
+•	Machine Learning & Statistics: Logistic Regression, Decision Trees, Random Forest, SVM, K-Means, PCA
+•	 Professional Skills: Stakeholder collaboration, written report writing, presentations, cross-functional teamwork, problem-solving and analytical thinking
+________________________________________
+Education
+•	Master of Data Science 
+University of Canberra
+Key subjects: Python Programming, R Programming, Data Visualisation, Advanced Analytics, Image Processing (MATLAB), Regression, Machine Learning
+
+•	Master of Information Technology(Software Design & Development)
+Charles Sturt University, Sydney 
+Key subjects: Android App Development, Databases, Programming Principles (Python), Interface Usability
+
+•	Bachelor of Public Health
+Pokhara University, Nepal 
+Key skills: Research, report writing, data collection, analysis
+
+
+Employment History________________________________________
+Research Assistant (Intern) – Jansz Group, Canberra
+Jul 2020 – Dec 2020
+•	Conducted data analysis and created visual dashboards using Power BI and Excel.
+•	Researched new Microsoft 365 and Power Platform features and documented key updates.
+•	Presented analytical insights and updates to team members to support informed decisions.
+•	Built workflow automations using Power Automate and Zapier.
+•	Supported marketing and data collection campaigns using GrowthLead and LinkedIn Navigator.
+________________________________________
+Customer Service Representative – Sukavya Decor & Hire, Canberra
+Mar 2022 – Present
+•	Managed customer enquiries via phone/email and provided clear service information.
+•	Coordinated bookings, maintained customer databases and ensured accurate recordkeeping.
+•	Handled customer complaints professionally and resolved issues promptly.
+•	Collaborated with team members to ensure smooth daily operations.
+•	Processed payments and maintained invoice/payment logs.
+________________________________________
+Care Service Employee – Uniting Care (Aged Care), Canberra
+Nov 2016 – Present
+•	Developed strong communication and problem-solving skills through client support.
+•	Completed detailed end-of-shift reports and maintained accurate documentation.
+•	Worked as part of multidisciplinary teams to implement and evaluate care plans.
+•	Supported residents with dementia using behaviour management strategies.
+•	Delivered activities to promote emotional and cognitive wellbeing.
+________________________________________
+Selected University Projects
+Capstone Project (Major Project)
+TIHM Dementia Care Anomaly Detection – Data Science Pipeline Project
+•	Developed an end-to-end machine learning pipeline to detect anomalies in behaviour of dementia patients using wearable sensor data.
+•	Cleaned, merged and analysed multiple datasets including activity, physiology, sleep and demographics.
+•	Engineered features for heart rate, respiratory rate, sleep quality and agitation events.
+•	Built and compared ML models (Logistic Regression, Random Forest, Gradient Boosting).
+•	Achieved strong performance (Gradient Boosting ~0.92 accuracy, improved recall for abnormal events).
+•	Presented insights to supervisors with actionable recommendations for early-warning detection.
+________________________________________
+Machine Learning Pipeline for Predicting Flight Delays 
+•	Processed 7M+ flight records from the US Bureau of Transportation Statistics (2014–2018) across 60 monthly ZIP files.
+•	Automated extraction, cleaning and merging of all CSV files into a combined dataset of 1.6M filtered records (top 5 airlines & top 9 busiest airports).
+•	Conducted detailed EDA to identify trends in delayed vs non-delayed flights, including patterns by month, time of day, airline, airport and distance.
+•	Built interactive Tableau dashboards to visualise flight delay trends, airline performance, destination patterns, delay severity and airport traffic distribution.
+•	Performed feature engineering including one-hot encoding, departure-hour extraction, distance grouping, creation of delay flags, and management of data imbalance.
+•	Developed ML models such as Logistic Regression with class-balancing, achieving strong performance for predicting flights delayed >15 minutes.
+•	Evaluated models using confusion matrix, ROC curve, precision, recall, sensitivity, specificity and F1-score.
+•	Documented the full pipeline with screenshots, workflow diagrams and model outputs as part of the Data Science Pipeline major assignment.
+
+Fashion MNIST Image Classification (Python, scikit-learn)
+•	Built a logistic regression model to classify 70,000 images into 10 categories.
+•	Performed EDA, preprocessing and visualisation.
+•	Achieved ~84% accuracy and analysed misclassifications for improvement.
+Nearest Neighbour Classifier & K-Means Clustering (Python)
+•	Implemented a Nearest Neighbour Classifier to label unknown samples.
+•	Applied K-Means to group samples and identify patterns in unlabeled data.
+________________________________________
+Additional Information
+•	Permanent Resident of Australia
+•	Available to commence immediately
+•	Referees available on request
+
