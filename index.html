@@ -4,21 +4,26 @@
   <meta charset="utf-8" />
   <title>Kyla Skye – Data Analyst Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #f5f7fb;
       color: #1f2933;
       line-height: 1.6;
     }
-    a { color: inherit; }
 
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------- HEADER ---------- */
     header {
       background: linear-gradient(135deg, #2563eb, #9333ea);
       color: white;
       padding: 2.5rem 1rem 4rem;
     }
+
     .container {
       max-width: 960px;
       margin: 0 auto;
@@ -33,40 +38,97 @@
       margin-bottom: 1.5rem;
       opacity: 0.95;
     }
+
     .top-nav a {
-      text-decoration: none;
       border-bottom: 1px solid transparent;
     }
+
     .top-nav a:hover {
       border-bottom-color: rgba(255,255,255,0.8);
     }
 
+    /* ---------- HERO ---------- */
     .hero {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 2rem;
     }
-    .hero-text { flex: 2 1 260px; }
-    .hero-text h1 { font-size: 2.4rem; margin-bottom: 0.4rem; }
-    .hero-text h2 { font-size: 1.1rem; font-weight: 500; opacity: 0.97; }
+
+    .hero-text {
+      flex: 2 1 260px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-text h2 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      opacity: 0.97;
+    }
+
     .hero-tagline {
       margin-top: 0.6rem;
       font-size: 0.95rem;
       opacity: 0.95;
     }
+
     .hero-badge {
       margin-top: 0.4rem;
       font-size: 0.9rem;
       opacity: 0.95;
     }
+
+    .hero-actions {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border-radius: 999px;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .btn-primary {
+      background: white;
+      color: #1d4ed8;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(15,23,42,0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 40px rgba(15,23,42,0.3);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.8);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
     .hero-photo {
       flex: 1 1 180px;
       text-align: center;
     }
+
     .hero-photo .circle {
-      width: 170px; height: 170px;
-      border-radius: 999px;
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
       overflow: hidden;
       background: white;
       border: 4px solid rgba(255,255,255,0.5);
@@ -74,50 +136,19 @@
       align-items: center;
       justify-content: center;
     }
+
     .hero-photo img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
-    }
-    .hero-actions {
-      margin-top: 1.5rem;
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-    .btn {
-      border-radius: 999px;
-      padding: 0.6rem 1.2rem;
-      border: none;
-      cursor: pointer;
-      font-size: 0.95rem;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-    }
-    .btn-primary {
-      background: white;
-      color: #1d4ed8;
-      font-weight: 600;
-      box-shadow: 0 10px 30px rgba(15,23,42,0.25);
-    }
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 40px rgba(15,23,42,0.3);
-    }
-    .btn-outline {
-      border: 1px solid rgba(255,255,255,0.8);
-      color: white;
-      background: transparent;
-    }
-    .btn-outline:hover {
-      background: rgba(255,255,255,0.1);
     }
 
-    main { margin-top: -2.3rem; padding-bottom: 3rem; }
+    /* ---------- MAIN ---------- */
+    main {
+      margin-top: -2.3rem;
+      padding-bottom: 3rem;
+    }
+
     section {
       background: white;
       border-radius: 16px;
@@ -126,80 +157,77 @@
       margin: 0 auto 1.5rem;
       max-width: 960px;
     }
+
     section h3 {
       font-size: 1.2rem;
       margin-bottom: 1rem;
       border-left: 4px solid #2563eb;
       padding-left: 0.75rem;
     }
+
     .two-col {
       display: grid;
-      grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+      grid-template-columns: 2fr 1.2fr;
       gap: 1.5rem;
     }
-    ul { margin-left: 1.25rem; margin-top: 0.5rem; }
-    li { margin-bottom: 0.3rem; }
 
-    .pill-list {
-      list-style: none;
-      margin-left: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.6rem;
-    }
-    .pill-list li {
-      background: #eff2ff;
-      color: #1d4ed8;
-      border-radius: 999px;
-      padding: 0.25rem 0.6rem;
-      font-size: 0.8rem;
-      margin-bottom: 0;
+    ul {
+      margin-left: 1.25rem;
+      margin-top: 0.5rem;
     }
 
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* ---------- PROJECTS ---------- */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1rem;
-      margin-top: 0.75rem;
     }
+
     .project-card {
       border-radius: 14px;
       border: 1px solid #e5e7eb;
-      padding: 1rem 1rem 1.1rem;
+      padding: 1rem;
       background: #fbfcff;
     }
+
     .project-card h4 {
       margin-bottom: 0.35rem;
       font-size: 1rem;
     }
+
     .project-meta {
       font-size: 0.8rem;
       color: #6b7280;
       margin-bottom: 0.4rem;
     }
+
     .project-card p {
       font-size: 0.9rem;
       margin-bottom: 0.6rem;
     }
+
     .project-card a {
       font-size: 0.85rem;
-      text-decoration: none;
       color: #2563eb;
       font-weight: 500;
     }
+
     .project-card a:hover {
       text-decoration: underline;
     }
 
+    /* ---------- CONTACT ---------- */
     .contact-list a {
       color: #2563eb;
-      text-decoration: none;
     }
+
     .contact-list a:hover {
       text-decoration: underline;
     }
-    .contact-list li { margin-bottom: 0.35rem; }
 
     footer {
       text-align: center;
@@ -209,17 +237,15 @@
     }
 
     @media (max-width: 700px) {
-      header { padding-top: 1.8rem; padding-bottom: 3rem; }
-      .top-nav { justify-content: center; margin-bottom: 1rem; }
       .hero { flex-direction: column-reverse; text-align: center; }
-      .hero-text h1 { font-size: 2rem; }
-      section { border-radius: 0.75rem; }
       .two-col { grid-template-columns: 1fr; }
+      .hero-text h1 { font-size: 2rem; }
     }
   </style>
 </head>
 
 <body>
+
 <header>
   <div class="container">
     <nav class="top-nav">
@@ -237,10 +263,10 @@
         <p class="hero-tagline">
           Data Analyst | Python · R · SQL · Power BI · Tableau | PR (Full Working Rights)
         </p>
+
         <p class="hero-badge">
-          Data Analyst with experience in Python, R, SQL, Power BI and end-to-end
-          machine-learning pipelines. Skilled in data cleaning, analysis, visualisation
-          and delivering actionable insights.
+          Data Analyst with hands-on experience in analytics, machine learning,
+          data visualisation and reproducible workflows.
         </p>
 
         <div class="hero-actions">
@@ -254,16 +280,86 @@
 
       <div class="hero-photo">
         <div class="circle">
-          <img src="https://github.com/KylaSkye.png" alt="Portrait of Kyla Skye">
+          <img src="https://github.com/KylaSkye.png" alt="Kyla Skye profile photo">
         </div>
       </div>
     </div>
   </div>
 </header>
 
-<!-- rest of your page remains unchanged -->
+<main>
+
+<section id="about">
+  <h3>About me</h3>
+  <div class="two-col">
+    <div>
+      <p>
+        I am a Master of Data Science graduate from the University of Canberra with
+        strong experience in Python, R, SQL and Power BI.
+      </p>
+      <p>
+        My work includes large-scale flight delay prediction, healthcare anomaly
+        detection, and reproducible data science pipelines.
+      </p>
+    </div>
+    <div>
+      <strong>Quick facts</strong>
+      <ul>
+        <li>Based in Canberra, Australia 🇦🇺</li>
+        <li>Open to Data Analyst & BI roles</li>
+        <li>APS-ready, full working rights</li>
+        <li>Strong healthcare & analytics background</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h3>Selected projects</h3>
+  <div class="projects">
+
+    <div class="project-card">
+      <h4>Flight Delay Prediction</h4>
+      <p class="project-meta">Python · ML · 7M+ records</p>
+      <p>End-to-end ML pipeline predicting domestic flight delays.</p>
+      <a href="https://github.com/KylaSkye/Flightdelay_assignment" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="project-card">
+      <h4>Zomato Sydney – Reproducible Pipeline</h4>
+      <p class="project-meta">Python · DVC · Git</p>
+      <p>Fully reproducible workflow using DVC and Git.</p>
+      <a href="https://github.com/KylaSkye/zomato-sydney-analysis" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="project-card">
+      <h4>Health Data Anomaly Detection</h4>
+      <p class="project-meta">Python · Healthcare ML</p>
+      <p>Anomaly detection on dementia-care sensor data.</p>
+      <a href="https://github.com/KylaSkye/Health-Data-Anomaly-Detection-for-dementia-patient" target="_blank">View on GitHub →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Contact</h3>
+  <ul class="contact-list">
+    <li>Email: <a href="mailto:skyee.kyla@gmail.com">skyee.kyla@gmail.com</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/kylaskye/" target="_blank">linkedin.com/in/kylaskye</a></li>
+    <li>GitHub: <a href="https://github.com/KylaSkye" target="_blank">github.com/KylaSkye</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Kyla Skye · Built with GitHub Pages
+</footer>
+
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
