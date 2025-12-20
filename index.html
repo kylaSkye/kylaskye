@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kyla Skye | Data Analyst / Junior Data Scientist</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111a2e;
+      --text:#e9eefc;
+      --muted:#b9c3e3;
+      --line:#223058;
+      --accent:#ffd166;
+      --accent2:#7aa2ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg), #070b14);
+      color:var(--text);
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:1100px; margin:0 auto; padding:28px 18px 60px}
+    header{
+      position:sticky; top:0; z-index:9;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,0.65);
+      border-bottom:1px solid rgba(34,48,88,0.55);
+    }
+    .nav{
+      max-width:1100px; margin:0 auto; padding:14px 18px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:0.2px}
+    .dot{width:10px;height:10px;border-radius:99px;background:var(--accent)}
+    .navlinks{display:flex; flex-wrap:wrap; gap:12px; font-size:14px; color:var(--muted)}
+    .navlinks a{padding:8px 10px;border-radius:10px}
+    .navlinks a:hover{background:rgba(122,162,255,0.12); color:var(--text)}
+    .hero{
+      display:grid; grid-template-columns: 1.2fr 0.8fr;
+      gap:22px; align-items:center; margin-top:18px;
+    }
+    @media (max-width: 880px){ .hero{grid-template-columns:1fr; } }
+    .card{
+      background: linear-gradient(180deg, rgba(17,26,46,0.92), rgba(17,26,46,0.65));
+      border:1px solid rgba(34,48,88,0.9);
+      border-radius:18px;
+      padding:18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    h1{margin:0 0 6px; font-size:34px; line-height:1.15}
+    .subtitle{color:var(--muted); margin:0 0 14px; font-size:16px}
+    .pillrow{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 0}
+    .pill{
+      border:1px solid rgba(34,48,88,0.9);
+      background: rgba(122,162,255,0.10);
+      padding:8px 10px;
+      border-radius:999px;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .cta{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px; padding:10px 12px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,88,0.9);
+      background: rgba(255,209,102,0.15);
+      color:var(--text);
+      font-weight:600;
+      font-size:14px;
+    }
+    .btn:hover{transform: translateY(-1px); transition: 120ms ease}
+    .btn.primary{
+      background: rgba(255,209,102,0.22);
+      border-color: rgba(255,209,102,0.55);
+    }
+    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px}
+    @media (max-width: 880px){ .grid2{grid-template-columns:1fr;} }
+    .sectiontitle{font-size:18px; margin:0 0 10px}
+    .muted{color:var(--muted)}
+    .avatar{
+      display:flex; flex-direction:column; gap:12px; align-items:center; text-align:center;
+      padding:22px;
+    }
+    .avatar img{
+      width:160px; height:160px; border-radius:22px;
+      border:1px solid rgba(34,48,88,0.9);
+      background:#0a1020;
+    }
+    .small{font-size:13px; color:var(--muted)}
+    .skills{display:flex; flex-wrap:wrap; gap:10px}
+    .skill{padding:8px 10px; border-radius:12px; background: rgba(122,162,255,0.10); border:1px solid rgba(34,48,88,0.8); color:var(--muted); font-size:13px}
+    .projects{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    @media (max-width: 880px){ .projects{grid-template-columns:1fr;} }
+    .proj h3{margin:0 0 6px; font-size:16px}
+    .proj p{margin:0 0 10px; color:var(--muted); font-size:14px; line-height:1.5}
+    .proj .tags{display:flex; flex-wrap:wrap; gap:8px}
+    .tag{font-size:12px; padding:6px 8px; border-radius:999px; background: rgba(255,209,102,0.12); border:1px solid rgba(255,209,102,0.35); color:var(--muted)}
+    details{
+      border:1px solid rgba(34,48,88,0.9);
+      border-radius:14px;
+      padding:12px;
+      background: rgba(17,26,46,0.55);
+    }
+    details summary{cursor:pointer; font-weight:700}
+    .resumeBlock{
+      white-space:pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size:13px;
+      line-height:1.6;
+      color:var(--muted);
+      margin-top:10px;
+    }
+    footer{margin-top:22px; text-align:center; color:var(--muted); font-size:13px}
+    .line{height:1px; background:rgba(34,48,88,0.7); margin:16px 0}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand"><span class="dot"></span> Kyla Skye</div>
+      <nav class="navlinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card">
+        <h1>Kyla Skye</h1>
+        <p class="subtitle">Data Analyst / Junior Data Scientist · Canberra, ACT</p>
+
+        <p class="muted">
+          I turn messy data into clear insights using <b>Python</b>, <b>SQL</b>, <b>Power BI</b>, and <b>R</b>.
+          I enjoy building dashboards, automating reporting workflows, and supporting evidence-based decisions.
+        </p>
+
+        <div class="pillrow">
+          <span class="pill">Python · Pandas · scikit-learn</span>
+          <span class="pill">SQL · Data Cleaning</span>
+          <span class="pill">Power BI · Reporting</span>
+          <span class="pill">R · Statistics</span>
+          <span class="pill">Git · Reproducible Workflows</span>
+        </div>
+
+        <div class="cta">
+          <!-- EDIT THESE LINKS -->
+          <a class="btn primary" href="https://github.com/kylaSkye" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="#resume">View Resume</a>
+        </div>
+
+        <div class="line"></div>
+
+        <p class="small">
+          ✅ Tip: Replace the LinkedIn link and add your project repo links below.
+        </p>
+      </div>
+
+      <aside class="card avatar">
+        <!-- GitHub avatar auto-load -->
+        <img src="https://github.com/kylaSkye.png" alt="Kyla Skye - GitHub profile photo" />
+        <div>
+          <div style="font-weight:800; font-size:16px;">Kyla Skye</div>
+          <div class="small">Canberra, ACT · Open to roles (APS / Private)</div>
+          <div class="small">Email: <a href="mailto:skyee.kyla@gmail.com">skyee.kyla@gmail.com</a></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="grid2">
+      <div class="card">
+        <h2 class="sectiontitle">About</h2>
+        <p class="muted">
+          I’m a Data Science graduate based in Canberra with hands-on experience in data analysis, workflow automation,
+          and Power BI reporting. I’m passionate about using data to improve services and support evidence-based decisions.
+        </p>
+        <p class="muted">
+          I’m currently building a strong portfolio with end-to-end projects: data cleaning, analysis, modelling,
+          and clear communication through dashboards and reports.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="sectiontitle">What I’m looking for</h2>
+        <ul class="muted" style="margin:0; padding-left:18px; line-height:1.7;">
+          <li>Data Analyst / Reporting / BI roles (APS-friendly)</li>
+          <li>Opportunities with mentorship + growth</li>
+          <li>Meaningful work that supports communities</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="card" style="margin-top:16px;">
+      <h2 class="sectiontitle">Skills</h2>
+      <div class="skills">
+        <!-- EASY TO EDIT -->
+        <span class="skill">Python (Pandas, NumPy)</span>
+        <span class="skill">SQL (joins, CTEs, data validation)</span>
+        <span class="skill">Power BI (DAX, dashboards)</span>
+        <span class="skill">R (tidyverse)</span>
+        <span class="skill">Data Cleaning & EDA</span>
+        <span class="skill">Machine Learning (baseline modelling)</span>
+        <span class="skill">Git / GitHub</span>
+        <span class="skill">Documentation & Stakeholder communication</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card" style="margin-top:16px;">
+      <h2 class="sectiontitle">Projects</h2>
+
+      <div class="projects">
+        <!-- PROJECT 1 -->
+        <div class="card proj">
+          <h3>TIHM Dementia – Anomaly Detection</h3>
+          <p>
+            End-to-end analysis of health monitoring data to detect agitation-related patterns.
+            Feature engineering + modelling + evaluation.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">ML</span><span class="tag">Healthcare</span>
+          </div>
+          <div class="cta" style="margin-top:12px;">
+            <a class="btn" href="https://github.com/kylaSkye/YOUR-REPO" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="card proj">
+          <h3>Power BI Dashboard – Reporting Automation</h3>
+          <p>
+            Built interactive dashboards and automated reporting workflows.
+            Focused on performance metrics and clear storytelling.
+          </p>
+          <div class="tags">
+            <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Reporting</span>
+          </div>
+          <div class="cta" style="margin-top:12px;">
+            <a class="btn" href="https://github.com/kylaSkye/YOUR-REPO" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="card proj">
+          <h3>Flight Delay Prediction (Pipeline)</h3>
+          <p>
+            Built reproducible ML pipelines using version control + structured outputs.
+            Compared approaches and tracked experiments.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Pipelines</span><span class="tag">Reproducibility</span>
+          </div>
+          <div class="cta" style="margin-top:12px;">
+            <a class="btn" href="https://github.com/kylaSkye/YOUR-REPO" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="card proj">
+          <h3>Image Segmentation (Gaussian / K-Means / EM)</h3>
+          <p>
+            Implemented classic segmentation methods and evaluated results on sample images.
+          </p>
+          <div class="tags">
+            <span class="tag">Computer Vision</span><span class="tag">Clustering</span><span class="tag">Python</span>
+          </div>
+          <div class="cta" style="margin-top:12px;">
+            <a class="btn" href="https://github.com/kylaSkye/YOUR-REPO" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME (easy edit) -->
+    <section id="resume" class="card" style="margin-top:16px;">
+      <h2 class="sectiontitle">Resume (easy to edit)</h2>
+
+      <details open>
+        <summary>Open / close resume text</summary>
+        <div class="resumeBlock">
+Kyla Skye
+Canberra, ACT 2900
+Email: skyee.kyla@gmail.com
+LinkedIn: (add link)
+Portfolio: (this website link)
+
+Career Objective
+Data Science graduate based in Canberra with hands-on experience in data analysis, workflow automation and Power BI reporting.
+Proficient in Python, SQL, R and reproducible analytics workflows. I’m passionate about using data to improve services and
+support evidence-based decisions, and I’m seeking an opportunity where I can contribute meaningful work while growing as
+a data professional.
+
+Key Skills
+- Python (Pandas, NumPy), basic ML (scikit-learn)
+- SQL (joins, CTEs), data validation, data cleaning
+- Power BI (dashboards, DAX), reporting & storytelling
+- R (tidyverse), statistics
+- Git/GitHub, documentation, stakeholder communication
+
+Experience
+(Add your work experience here – keep it in bullet points with results/impact)
+
+Education
+Master of Data Science — University of Canberra (expected Jan 2026)
+(Add more)
+
+Projects
+- TIHM Dementia Anomaly Detection (Python, feature engineering, modelling)
+- Flight Delay Prediction Pipeline (reproducibility, modelling)
+- Image Segmentation (Gaussian smoothing, K-Means, EM)
+
+References
+Available upon request
+        </div>
+      </details>
+
+      <p class="small" style="margin-top:12px;">
+        Tip: If you want a downloadable PDF later, you can upload your PDF into the repo and add a “Download Resume” button.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="grid2" style="margin-top:16px;">
+      <div class="card">
+        <h2 class="sectiontitle">Contact</h2>
+        <p class="muted" style="margin:0 0 10px;">
+          Want to connect? I’m open to Canberra / APS-aligned roles and hybrid options.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:skyee.kyla@gmail.com">Email me</a>
+          <a class="btn" href="https://github.com/kylaSkye" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="sectiontitle">Quick edits you’ll do</h2>
+        <ul class="muted" style="margin:0; padding-left:18px; line-height:1.7;">
+          <li>Replace “YOUR-LINKEDIN” with your real LinkedIn URL</li>
+          <li>Replace “YOUR-REPO” links in Projects</li>
+          <li>Edit the resume block inside the Resume section</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Kyla Skye · Built with HTML/CSS · Hosted on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
