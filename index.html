@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
   >
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -33,7 +35,10 @@
       text-decoration: none;
     }
 
-    /* NAVIGATION */
+
+    /* =========================
+       NAVIGATION
+    ========================= */
 
     nav {
       background: #0f172a;
@@ -67,7 +72,10 @@
       color: #38bdf8;
     }
 
-    /* HERO */
+
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       min-height: 85vh;
@@ -129,7 +137,10 @@
       background: white;
     }
 
-    /* BUTTONS */
+
+    /* =========================
+       BUTTONS
+    ========================= */
 
     .buttons {
       display: flex;
@@ -164,7 +175,10 @@
       color: #0f172a;
     }
 
-    /* GENERAL SECTIONS */
+
+    /* =========================
+       GENERAL
+    ========================= */
 
     section {
       padding: 80px 8%;
@@ -190,7 +204,10 @@
       margin-top: 5px;
     }
 
-    /* ABOUT */
+
+    /* =========================
+       ABOUT
+    ========================= */
 
     #about {
       background: white;
@@ -207,7 +224,10 @@
       margin-bottom: 18px;
     }
 
-    /* SKILLS */
+
+    /* =========================
+       SKILLS
+    ========================= */
 
     .skills-grid {
       display: grid;
@@ -231,7 +251,10 @@
       color: #64748b;
     }
 
-    /* PROJECTS */
+
+    /* =========================
+       PROJECTS
+    ========================= */
 
     #projects {
       background: white;
@@ -249,6 +272,8 @@
       border-radius: 12px;
       border: 1px solid #e2e8f0;
       transition: 0.2s;
+      display: flex;
+      flex-direction: column;
     }
 
     .project-card:hover {
@@ -272,16 +297,31 @@
       font-size: 14px;
     }
 
-    /* EDUCATION */
+    .project-link {
+      display: inline-block;
+      margin-top: auto;
+      padding-top: 15px;
+      color: #0284c7;
+      font-weight: bold;
+    }
+
+    .project-link:hover {
+      color: #075985;
+      text-decoration: underline;
+    }
+
+
+    /* =========================
+       EDUCATION
+    ========================= */
 
     .education-card {
       background: white;
       max-width: 800px;
-      margin: auto;
+      margin: 0 auto 20px;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-      margin-bottom: 20px;
     }
 
     .education-card h3 {
@@ -297,7 +337,10 @@
       color: #64748b;
     }
 
-    /* EXPERIENCE */
+
+    /* =========================
+       EXPERIENCE
+    ========================= */
 
     #experience {
       background: white;
@@ -325,7 +368,10 @@
       color: #64748b;
     }
 
-    /* CONTACT */
+
+    /* =========================
+       CONTACT
+    ========================= */
 
     #contact {
       background: #0f172a;
@@ -361,7 +407,10 @@
       color: #0f172a;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       background: #020617;
@@ -370,7 +419,10 @@
       padding: 20px;
     }
 
-    /* MOBILE */
+
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 800px) {
 
@@ -407,247 +459,257 @@
         width: 200px;
         height: 200px;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- NAVIGATION -->
 
-  <nav>
-    <div class="logo">Kyla Skye</div>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+
+  <div class="logo">Kyla Skye</div>
+
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+</nav>
 
 
-  <!-- HERO -->
 
-  <section class="hero">
+<!-- =========================
+     HERO
+========================= -->
 
-    <div class="hero-container">
+<section class="hero">
 
-      <div class="hero-text">
+  <div class="hero-container">
 
-        <h1>Kyla Skye</h1>
+    <div class="hero-text">
 
-        <h2>Data Analyst | Data Science Graduate</h2>
+      <h1>Kyla Skye</h1>
 
-        <div class="citizenship">
-          🇦🇺 Australian Citizen | Canberra, ACT
-        </div>
+      <h2>Data Analyst | Data Science Graduate</h2>
 
-        <p>
-          Master of Data Science graduate with a healthcare background
-          and practical experience in data analysis, visualisation,
-          statistical analysis and machine learning.
-        </p>
-
-        <p>
-          Python · SQL · R · Power BI · Tableau · Machine Learning
-        </p>
-
-        <div class="buttons">
-
-          <a
-            class="btn btn-primary"
-            href="#projects">
-            View My Projects
-          </a>
-
-          <a
-            class="btn btn-outline"
-            href="Kyla%20Skye%20resume%20fiknal.docx"
-            download>
-            Download Resume
-          </a>
-
-          <a
-            class="btn btn-outline"
-            href="https://www.linkedin.com/"
-            target="_blank">
-            LinkedIn
-          </a>
-
-          <a
-            class="btn btn-outline"
-            href="https://github.com/kylaSkye"
-            target="_blank">
-            GitHub
-          </a>
-
-        </div>
-
+      <div class="citizenship">
+        🇦🇺 Australian Citizen | Canberra, ACT
       </div>
 
+      <p>
+        Master of Data Science graduate with a healthcare background
+        and practical experience in data analysis, visualisation,
+        statistical analysis and machine learning.
+      </p>
 
-      <div class="hero-image">
+      <p>
+        Python · SQL · R · Power BI · Tableau · Machine Learning
+      </p>
 
-        <!-- Uses your GitHub profile photo -->
+      <div class="buttons">
 
-        <img
-          src="https://github.com/kylaSkye.png"
-          alt="Kyla Skye">
+        <a
+          class="btn btn-primary"
+          href="#projects">
+          View My Projects
+        </a>
+
+        <a
+          class="btn btn-outline"
+          href="Kyla%20Skye%20resume%20fiknal.docx"
+          download>
+          Download Resume
+        </a>
+
+        <a
+          class="btn btn-outline"
+          href="https://www.linkedin.com/in/kylaskye/"
+          target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn
+        </a>
+
+        <a
+          class="btn btn-outline"
+          href="https://github.com/kylaSkye"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
 
       </div>
 
     </div>
 
-  </section>
+
+    <div class="hero-image">
+
+      <img
+        src="https://github.com/kylaSkye.png"
+        alt="Kyla Skye">
+
+    </div>
+
+  </div>
+
+</section>
 
 
-  <!-- ABOUT -->
 
-  <section id="about">
+<!-- =========================
+     ABOUT
+========================= -->
 
-    <div class="container">
+<section id="about">
 
-      <div class="section-title">
-        <h2>About Me</h2>
-        <p>Healthcare experience meets data science.</p>
+  <div class="container">
+
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p>Healthcare experience meets data science.</p>
+    </div>
+
+    <div class="about-text">
+
+      <p>
+        I am a Master of Data Science graduate from the University of
+        Canberra with a professional background in healthcare and aged
+        care. My experience combines strong interpersonal and stakeholder
+        communication skills with technical capabilities in data analysis,
+        visualisation and machine learning.
+      </p>
+
+      <p>
+        Through my university projects, I have worked with complex
+        real-world datasets using Python, SQL, R and machine-learning
+        techniques. My work has involved data cleaning, exploratory data
+        analysis, statistical modelling, classification, visualisation
+        and communicating analytical findings.
+      </p>
+
+      <p>
+        My healthcare experience has given me a strong understanding of
+        data quality, confidentiality, teamwork and responsible handling
+        of sensitive information. I am particularly interested in using
+        data to support evidence-based decision-making and improve
+        services for the community.
+      </p>
+
+      <p>
+        I am currently seeking opportunities in data analytics,
+        data science and related analytical roles in Canberra.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Technical Skills</h2>
+      <p>Tools and technologies I use for data analysis.</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <p>Python, R, SQL</p>
       </div>
 
-      <div class="about-text">
-
+      <div class="skill-card">
+        <h3>Data Analysis</h3>
         <p>
-          I am a Master of Data Science graduate from the University of
-          Canberra with a professional background in healthcare and aged
-          care. My experience combines strong interpersonal and stakeholder
-          communication skills with technical capabilities in data analysis,
-          visualisation and machine learning.
+          Data Cleaning, Exploratory Data Analysis,
+          Statistical Analysis and Data Transformation
         </p>
+      </div>
 
+      <div class="skill-card">
+        <h3>Data Visualisation</h3>
         <p>
-          Through my university projects, I have worked with complex
-          real-world datasets using Python, SQL, R and machine-learning
-          techniques. My work has involved data cleaning, exploratory data
-          analysis, statistical modelling, classification, visualisation
-          and communicating analytical findings.
+          Power BI, Tableau, Matplotlib,
+          Dashboards and Reporting
         </p>
+      </div>
 
+      <div class="skill-card">
+        <h3>Machine Learning</h3>
         <p>
-          My healthcare experience has given me a strong understanding of
-          data quality, confidentiality, teamwork and responsible handling
-          of sensitive information. I am particularly interested in using
-          data to support evidence-based decision-making and improve
-          services for the community.
+          Logistic Regression, Random Forest,
+          Gradient Boosting, SVM and Model Evaluation
         </p>
+      </div>
 
+      <div class="skill-card">
+        <h3>Data Science</h3>
         <p>
-          I am currently seeking opportunities in data analytics,
-          data science and related analytical roles in Canberra.
+          Classification, Regression,
+          Feature Engineering and Predictive Modelling
         </p>
+      </div>
 
+      <div class="skill-card">
+        <h3>Professional Skills</h3>
+        <p>
+          Communication, Problem Solving,
+          Teamwork, Stakeholder Engagement and Reporting
+        </p>
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- SKILLS -->
 
-  <section id="skills">
-
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Technical Skills</h2>
-        <p>Tools and technologies I use for data analysis.</p>
-      </div>
-
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <h3>Programming</h3>
-          <p>Python, R, SQL</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Data Analysis</h3>
-          <p>
-            Data Cleaning, Exploratory Data Analysis,
-            Statistical Analysis and Data Transformation
-          </p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Data Visualisation</h3>
-          <p>
-            Power BI, Tableau, Matplotlib,
-            dashboards and reporting
-          </p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Machine Learning</h3>
-          <p>
-            Logistic Regression, Random Forest,
-            Gradient Boosting, SVM and model evaluation
-          </p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Data Science</h3>
-          <p>
-            Classification, Regression,
-            Feature Engineering and Predictive Modelling
-          </p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Professional Skills</h3>
-          <p>
-            Communication, Problem Solving,
-            Teamwork, Stakeholder Engagement and Reporting
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- PROJECTS -->
-
-  <section id="projects">
-
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Featured Projects</h2>
-        <p>Selected data science and analytics work.</p>
-      </div>
-
-
-      <div class="projects-grid">
-
-
-       <!-- PROJECTS -->
+<!-- =========================
+     PROJECTS
+========================= -->
 
 <section id="projects">
 
   <div class="container">
 
     <div class="section-title">
+
       <h2>Data Analytics & Data Science Projects</h2>
+
       <p>
-        Selected projects demonstrating my experience in data analysis,
+        Projects demonstrating my experience in data analysis,
         statistical modelling, machine learning and data visualisation.
       </p>
+
     </div>
 
+
     <div class="projects-grid">
+
 
       <!-- PROJECT 1 -->
 
@@ -674,11 +736,13 @@
         <a
           href="https://github.com/kylaSkye/Health-Data-Anomaly-Detection-for-dementia-patient"
           target="_blank"
+          rel="noopener noreferrer"
           class="project-link">
           View Project on GitHub →
         </a>
 
       </div>
+
 
 
       <!-- PROJECT 2 -->
@@ -688,15 +752,14 @@
         <h3>Canberra Airport & Weather Analysis</h3>
 
         <p>
-          Analysed Canberra Airport and Bureau of Meteorology data to
-          investigate relationships between weather conditions and
-          airport-related outcomes.
+          Analysed Canberra Airport and weather data to investigate
+          relationships between weather conditions and airport-related
+          outcomes.
         </p>
 
         <p>
           The project included data preparation, statistical analysis,
-          modelling, visualisation and evaluation, including rainfall
-          prediction using historical weather data.
+          modelling, visualisation and evaluation using weather data.
         </p>
 
         <p class="tools">
@@ -706,11 +769,13 @@
         <a
           href="https://github.com/kylaSkye/Canberra-Airport-and-weather-relation"
           target="_blank"
+          rel="noopener noreferrer"
           class="project-link">
           View Project on GitHub →
         </a>
 
       </div>
+
 
 
       <!-- PROJECT 3 -->
@@ -738,11 +803,13 @@
         <a
           href="https://github.com/kylaSkye/zomato-sydney-analysis"
           target="_blank"
+          rel="noopener noreferrer"
           class="project-link">
           View Project on GitHub →
         </a>
 
       </div>
+
 
 
       <!-- PROJECT 4 -->
@@ -752,14 +819,14 @@
         <h3>Flight Delay Prediction</h3>
 
         <p>
-          Developed a machine-learning pipeline to predict whether a
-          flight would arrive 15 or more minutes late.
+          Developed a machine-learning pipeline to predict whether
+          a flight would arrive 15 or more minutes late.
         </p>
 
         <p>
           The project demonstrates practical experience in data
           preparation, predictive modelling, model evaluation and
-          developing a structured machine-learning workflow.
+          structured machine-learning workflows.
         </p>
 
         <p class="tools">
@@ -769,11 +836,13 @@
         <a
           href="https://github.com/kylaSkye/Flightdelay_prediction"
           target="_blank"
+          rel="noopener noreferrer"
           class="project-link">
           View Project on GitHub →
         </a>
 
       </div>
+
 
 
       <!-- PROJECT 5 -->
@@ -801,11 +870,13 @@
         <a
           href="https://github.com/kylaSkye/ACT-walking-centre-"
           target="_blank"
+          rel="noopener noreferrer"
           class="project-link">
           View Project on GitHub →
         </a>
 
       </div>
+
 
 
       <!-- PROJECT 6 -->
@@ -833,12 +904,14 @@
         <a
           href="https://github.com/kylaSkye/Determinants-of-wages"
           target="_blank"
+          rel="noopener noreferrer"
           class="project-link">
           View Project on GitHub →
         </a>
 
       </div>
 
+
     </div>
 
   </div>
@@ -846,43 +919,69 @@
 </section>
 
 
-  <!-- EDUCATION -->
 
-  <section id="education">
-
-   <!-- EDUCATION -->
+<!-- =========================
+     EDUCATION
+========================= -->
 
 <section id="education">
 
   <div class="container">
 
     <div class="section-title">
+
       <h2>Education & Certifications</h2>
-      <p>Academic qualifications and professional education.</p>
+
+      <p>
+        Academic qualifications and professional education.
+      </p>
+
     </div>
 
+
     <div class="education-card">
+
       <h3>Master of Data Science</h3>
+
       <h4>University of Canberra</h4>
+
       <p>Canberra, ACT, Australia</p>
+
     </div>
 
+
     <div class="education-card">
+
       <h3>Master of Information Technology</h3>
+
       <h4>Charles Sturt University</h4>
-      <p>Software Design and Development | Sydney, Australia</p>
+
+      <p>
+        Software Design and Development | Sydney, Australia
+      </p>
+
     </div>
 
+
     <div class="education-card">
+
       <h3>Bachelor of Public Health</h3>
+
       <h4>Pokhara University</h4>
+
       <p>Nepal</p>
+
     </div>
 
+
     <div class="education-card">
+
       <h3>Professional Year</h3>
+
       <h4>Performance Education</h4>
+
       <p>Australia</p>
+
     </div>
 
   </div>
@@ -890,115 +989,129 @@
 </section>
 
 
-  <!-- EXPERIENCE -->
 
-  <section id="experience">
+<!-- =========================
+     EXPERIENCE
+========================= -->
 
-    <div class="container">
+<section id="experience">
 
-      <div class="section-title">
+  <div class="container">
 
-        <h2>Professional Experience</h2>
+    <div class="section-title">
 
-        <p>
-          Transferable experience supporting my transition into data analytics.
-        </p>
+      <h2>Professional Experience</h2>
 
-      </div>
-
-
-      <div class="experience-card">
-
-        <h3>Healthcare & Aged Care Professional</h3>
-
-        <h4>Canberra, ACT</h4>
-
-        <p>
-          Experienced in working within healthcare and aged-care
-          environments, including dementia care. Developed strong
-          communication, teamwork, problem-solving and stakeholder
-          engagement skills while working with sensitive information
-          and detailed documentation.
-        </p>
-
-      </div>
-
-
-      <div class="experience-card">
-
-        <h3>Data Science Projects</h3>
-
-        <h4>University of Canberra</h4>
-
-        <p>
-          Worked collaboratively on analytical projects involving
-          complex datasets, data cleaning, statistical analysis,
-          visualisation and machine-learning modelling.
-          Communicated technical findings through reports,
-          presentations and project documentation.
-        </p>
-
-      </div>
+      <p>
+        Transferable professional experience supporting my
+        transition into data analytics.
+      </p>
 
     </div>
 
-  </section>
 
+    <div class="experience-card">
 
-  <!-- CONTACT -->
+      <h3>Healthcare & Aged Care Professional</h3>
 
-  <section id="contact">
+      <h4>Canberra, ACT</h4>
 
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Let's Connect</h2>
-
-        <p>
-          I am open to Data Analyst, Data Scientist and related
-          analytical opportunities in Canberra.
-        </p>
-
-      </div>
-
-
-      <div class="contact-links">
-
-        <a
-          href="https://www.linkedin.com/"
-          target="_blank">
-          LinkedIn
-        </a>
-
-        <a
-          href="https://github.com/kylaSkye"
-          target="_blank">
-          GitHub
-        </a>
-
-        <a
-          href="Kyla%20Skye%20resume%20fiknal.docx"
-          download>
-          Download Resume
-        </a>
-
-      </div>
+      <p>
+        Experienced in working within healthcare and aged-care
+        environments, including dementia care. Developed strong
+        communication, teamwork, problem-solving and stakeholder
+        engagement skills while working with sensitive information
+        and detailed documentation.
+      </p>
 
     </div>
 
-  </section>
+
+    <div class="experience-card">
+
+      <h3>Data Science Projects</h3>
+
+      <h4>University of Canberra</h4>
+
+      <p>
+        Worked collaboratively on analytical projects involving
+        complex datasets, data cleaning, statistical analysis,
+        visualisation and machine-learning modelling. Communicated
+        technical findings through reports, presentations and
+        project documentation.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
 
-  <!-- FOOTER -->
 
-  <footer>
+<!-- =========================
+     CONTACT
+========================= -->
 
-    <p>
-      © 2026 Kyla Skye | Data Analyst Portfolio
-    </p>
+<section id="contact">
 
-  </footer>
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Let's Connect</h2>
+
+      <p>
+        I am open to Data Analyst, Data Scientist and related
+        analytical opportunities in Canberra.
+      </p>
+
+    </div>
+
+
+    <div class="contact-links">
+
+      <a
+        href="https://www.linkedin.com/in/kylaskye/"
+        target="_blank"
+        rel="noopener noreferrer">
+        LinkedIn
+      </a>
+
+      <a
+        href="https://github.com/kylaSkye"
+        target="_blank"
+        rel="noopener noreferrer">
+        GitHub
+      </a>
+
+      <a
+        href="Kyla%20Skye%20resume%20fiknal.docx"
+        download>
+        Download Resume
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <p>
+    © 2026 Kyla Skye | Data Analyst Portfolio
+  </p>
+
+</footer>
+
 
 </body>
+
 </html>
